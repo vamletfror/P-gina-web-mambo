@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesas</title>
+    <link rel="stylesheet" href="styleProductos.css">
+</head>
+<body id="body">
+    <!--en este apartado va todo lo relacionado con el header de la página-->
+    <header class="header">
+        <a href="index.html"><img src="Imaganes/Logos/palmera2.png" class="header_logo" alt="El ave que revive de sus cenisas"></a>
+        <button id="carrito__Button">&#128722;<span id="carrito__Contador">0</span></button>
+    </header>
+    <!--Aquí va todo lo relacionado con la parte principal de la página-->
+    <main class="main">
+        <div class="main__Container" data-name="Alitas" data-price="85" data-description="Alitas clásicas sabor BBQ" data-img="Imaganes/Productos/Alitas.png">
+            <img class="main__Img" src="Imaganes/Productos/Bbq.png" alt="Alitas sabor: BBQ"><p class="main__P">Alitas</p>
+        </div>
+        <div class="main__Container" data-name="Doble" data-price="85" data-description="Alitas clásicas sabor BBQ" data-img="Imaganes/Productos/Doble.png">
+            <img class="main__Img" src="Imaganes/Productos/Doble.png" alt="Alitas sabor: BBQ"><p class="main__P">Doble</p>
+        </div>
+        <div class="main__Container" data-name="Coca" data-price="85" data-description="Alitas clásicas sabor BBQ" data-img="Imaganes/Productos/coca2.png">
+            <img class="main__Img" src="Imaganes/Productos/coca2.png" alt="Alitas sabor: BBQ"><p class="main__P">Coca-Cola</p>
+        </div>
+        <div class="main__Container" data-name="Gourmet" data-price="85" data-description="Alitas clásicas sabor BBQ" data-img="Imaganes/Productos/Gourmet.png">
+            <img class="main__Img" src="Imaganes/Productos/Gourmet.png" alt="Alitas sabor: BBQ"><p class="main__P">Gourmet</p>
+        </div>
+                <div class="main__Container" data-name="Alitas" data-price="85" data-description="Alitas clásicas sabor BBQ" data-img="Imaganes/Productos/Alitas.png">
+            <img class="main__Img" src="Imaganes/Productos/Bbq.png" alt="Alitas sabor: BBQ"><p class="main__P">Alitas</p>
+        </div>
+        <div class="main__Container" data-name="Doble" data-price="85" data-description="Alitas clásicas sabor BBQ" data-img="Imaganes/Productos/Doble.png">
+            <img class="main__Img" src="Imaganes/Productos/Doble.png" alt="Alitas sabor: BBQ"><p class="main__P">Doble</p>
+        </div>
+        <div class="main__Container" data-name="Coca" data-price="85" data-description="Alitas clásicas sabor BBQ" data-img="Imaganes/Productos/coca2.png">
+            <img class="main__Img" src="Imaganes/Productos/coca2.png" alt="Alitas sabor: BBQ"><p class="main__P">Coca-Cola</p>
+        </div>
+        <div class="main__Container" data-name="Gourmet" data-price="85" data-description="Alitas clásicas sabor BBQ" data-img="Imaganes/Productos/Gourmet.png">
+            <img class="main__Img" src="Imaganes/Productos/Gourmet.png" alt="Alitas sabor: BBQ"><p class="main__P">Gourmet</p>
+        </div>
+                <div class="main__Container" data-name="Alitas" data-price="85" data-description="Alitas clásicas sabor BBQ" data-img="Imaganes/Productos/Alitas.png">
+            <img class="main__Img" src="Imaganes/Productos/Bbq.png" alt="Alitas sabor: BBQ"><p class="main__P">Alitas</p>
+        </div>
+        <div class="main__Container" data-name="Doble" data-price="85" data-description="Alitas clásicas sabor BBQ" data-img="Imaganes/Productos/Doble.png">
+            <img class="main__Img" src="Imaganes/Productos/Doble.png" alt="Alitas sabor: BBQ"><p class="main__P">Doble</p>
+        </div>
+        <div class="main__Container" data-name="Coca" data-price="85" data-description="Alitas clásicas sabor BBQ" data-img="Imaganes/Productos/coca2.png">
+            <img class="main__Img" src="Imaganes/Productos/coca2.png" alt="Alitas sabor: BBQ"><p class="main__P">Coca-Cola</p>
+        </div>
+        <div class="main__Container" data-name="Gourmet" data-price="85" data-description="Alitas clásicas sabor BBQ" data-img="Imaganes/Productos/Gourmet.png">
+            <img class="main__Img" src="Imaganes/Productos/Gourmet.png" alt="Alitas sabor: BBQ"><p class="main__P">Gourmet</p>
+        </div>
+        
+    </main>
+    <!--En esta parte va todo lo relacionado con la ventana modal que se abre al dar click en una imagen de la página-->
+    <div id="div__Cap-Productos">
+        <div class="div__Modal">
+            <div class="div__Modal-Img">
+                <button type="button" id="button__Cerrar-Modal">&times;</button>
+                <img id="img__Modal" src="" alt="">
+            </div>
+            <div id="div__Modal-Content">
+                <h2 id="div__Modal-h2">Descripción</h2>
+                <p id="div__Modal-p"></p>
+                <div class="div__Modal-Container-Buttons">
+                    <button class="buttons__Mas-Menos" id="div__Modal-Menos" type="button">-</button>
+                    <input type="number" id="div__Modal-Input" value="0">
+                    <button class="buttons__Mas-Menos" id="div__Modal-Mas" type="button">+</button>
+                    <button id="div__Modal-Aceptar">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="div__Cap-Carrito">
+        <div id="div__Ventana-Carrito">
+            <button id="button__Cerrar-Carrito">&times;</button>
+            <h2>Tu Carrito</h2>
+            <div id="div__Container-Carrito">
+            </div>
+            <div class="div__Container-Buttons-Carrito">
+                <button id="button__Aceptar-Productos">Aceptar</button>
+                <button id="button__Eliminar-Productos">Eliminar</button>
+            </div>
+        </div>
+    </div>
+    <template class="template__Carrito">
+        <div class="div__Container-Productos-Carrito">
+            <div class="div__Container-Data">
+                <div class="div__Container-Img-Productos">
+                    <img class="img__Productos" src="" alt="imagen del producto seleccionado">
+                </div>
+                <div class="div__Container-Data-Productos">
+                    <h3 class="h3__Carrito"></h3><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ut nemo iusto ipsum commodi praesentium nihil quod explicabo dolorem inventore vitae, velit est autem modi repellat, illum quos itaque maiores?Lorem ips</p>
+                </div>
+            </div>
+            <input class="input__Productos" type="number" class="input__Carrito">
+        </div>
+    </template>
+    <script src="javaProductos.js"></script>
+</body>
+
+</html>

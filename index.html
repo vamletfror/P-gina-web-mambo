@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title> 
+</head>
+<body id="body">
+    <!--En este apartado va la estructura de la barra de navegación-->
+    <header class="header">
+        <input type="checkbox" id="header__Checkbox">
+        <label for="header__Checkbox" role="button" class="header__Label">&#9776</label>
+        <nav class="header__Nav">
+            <ul class="header__Ul">
+                <li class="header__List"><a href="#" class="header__Link"><span class="span__Icono-Opcion">&#8962</span> Home</a></li>
+                <li class="header__List"><a href="#" class="header__Link"><span class="span__Icono-Opcion">&#9881</span> Settings</a></li>
+                <li class="header__List"><a href="#" class="header__Link"><span class="span__Icono-Opcion">&#127865</span> Productos</a></li>
+                <li class="header__List"><a href="#" class="header__Link"><span class="span__Icono-Opcion">&#127991</span> Ofertas</a></li>
+            </ul>
+        </nav>
+        <div class="header__Div-Img">
+            <img class="header__Img-Palmera" src="Imaganes/Logos/palmera2.png" alt="Logo de una palmera">
+        </div>
+    </header>
+    <!--Este div contiene la imagen principal junto con todo lo que esta conlleva junto con los botones para abrir y cerrar los formularios-->
+    <div class="div_Main-Image">
+        <div class="div_Cape">
+            <div class="container_Options">
+                <button id="button_Pedido" class="button_Option">Reserva</button>
+                <button class="button_Option">Pedido</button>
+            </div>
+        </div>
+    </div>
+    <!--Aquí va el formulario que enrealidad son dos, para hacer el pedido y para hacer la reserva, en un futuro cuando entienda como enviar ambos formularios con un solo click volvere a editar esto-->
+    <div class="separador_Form">
+        <form action="" class="form_Reserva-Pedido">
+            <h2 class="h2_Form">Reserva</h2>
+            <button type="button" id="cerrar_Form" title="Cerrar">X</button>
+            <div class="div_Nombre-Pedido">
+                <input type="text" id="name" class="input_Nombre-Apellido" placeholder=" "><label for="name" class="label_Nombre-Apellido">Nombre</label>
+            </div>
+            <div class="div_Nombre-Pedido">
+                <input type="text" id="last_Name" class="input_Nombre-Apellido" placeholder=" "><label for="last_Name" class="label_Nombre-Apellido">Apelldio</label>
+            </div>
+            <div class="div_Date-Time">
+                <div class="div_Date">
+                    <label for="dt">Fecha</label><input type="date" name="date" id="dt">
+                </div>
+                <div class="div_Time">
+                    <label for="hr">Hora</label><input type="time" name="hour" id="hr">
+                </div>
+            </div>
+            <label for="txt_Area">Comentarios</label>
+            <textarea name="comments" id="txt_Area" rows="5" placeholder="Alergias, Preferencia de mesa, etc"></textarea>
+            <button id="button_Siguiente">Siguiente</button>
+        </form>
+    </div>
+    <a href="hamburguesas.html">click me</a>
+    <script src="java.js"></script>
+</body>
+</html>
+
+
